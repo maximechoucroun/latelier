@@ -17,7 +17,7 @@ https://nodejs.org/en/download
 
 npm --version
 10.5.0
-
+  
 nest --version
 10.3.2
 https://docs.nestjs.com/first-steps
