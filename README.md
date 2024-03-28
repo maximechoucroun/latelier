@@ -1,4 +1,4 @@
-0/ création d'un projet sur gitlab avec la branche setup-et-debut, puis pasas sur main
+### 0/ création d'un projet sur gitlab avec la branche setup-et-debut, puis pasas sur main
 Environnement Ubuntu v20 en environnement WSL2
 
 maxime@Mandarine:~/tests/nestjs/latelier/latelier$ lsb_release -a
@@ -26,7 +26,7 @@ Microsoft VsCode sous Win mais en mode Ubuntu WSL2
 (Version Win de VSCODE, mais travaillant à distance sur Ubuntu)
 v 1.87
 
-<span style="color: #EFF177">
+**Affichage**
 Version: 1.87.2 (user setup)
 Commit: 863d2581ecda6849923a2118d93a088b0745d9d6
 Date: 2024-03-08T15:20:17.278Z
@@ -36,34 +36,32 @@ Chromium: 118.0.5993.159
 Node.js: 18.17.1   (différente de la version du projet)
 V8: 11.8.172.18-electron.0
 OS: Windows_NT x64 10.0.22631
-</span>
+
 
 Sont installés sur VScode:
 prettier
 typescript
-eslint
+eslint   
 
-<span style="color: #26B260">Les commandes sont en vert</span>
-<span style="color: #EFF177">Les sorties-ecrans commandes sont en jaune</span>
 
-1/ Git
- <span style="color: #26B260">Git clone https://github.com/maxime-choucroun/latelier</span>
+### 1/ Git
+`Git clone https://github.com/maxime-choucroun/latelier`
 
-2/
- <span style="color: #26B260">npm i -g @nestjs/cli</span>
- <span style="color: #26B260">nest new latelier</span>
+### 2/ Install
+ `npm i -g @nestjs/cli`
+ `nest new latelier`
 
 
 
-3/ Changement de repertoire 
-<span style="color: #26B260">cd latelier</span>
+### 3/ Changement de repertoire 
+`cd latelier`
 
 le répertoire est dans mon cas:  maxime@Mandarine:~/tests/nestjs/latelier/latelier$
 maxime user
 mandarine nom de l'ordinateur
 
 
-4/ Verification de l'installation du projet blanc
+### 4/ Verification de l'installation du projet blanc
 
 Indentation space 4 - UTF-8 LF
 
@@ -71,12 +69,12 @@ Sont installés
 
 
 
-maxime@Mandarine:~/tests/nestjs/latelier/latelier$ <span style="color: #26B260">npm install</span>
+maxime@Mandarine:~/tests/nestjs/latelier/latelier$ `npm install`
 (install des modules)
 
-maxime@Mandarine:~/tests/nestjs/latelier/latelier$ <span style="color: #26B260">npm run start:dev</span>
+maxime@Mandarine:~/tests/nestjs/latelier/latelier$ `npm run start:dev`
 
-<span style="color: #EFF177">
+
 Affichage:
 
 [3:01:52 PM] Starting compilation in watch mode...
@@ -90,10 +88,10 @@ Affichage:
 [Nest] 16328  - 03/27/2024, 3:01:55 PM     LOG [NestApplication] Nest application successfully started +3ms
 </span>
 
-5/ Tests jest
- <span style="color: #26B260">npm run test</span>
+### 5/ Tests jest
+ `npm run test`
 
-<span style="color: #EFF177">
+**Affichage**
 maxime@Mandarine:~/tests/nestjs/latelier/latelier$ npm run test 
 
 > latelier@0.0.1 test
@@ -116,4 +114,3 @@ Snapshots:   0 total
 Time:        2.097 s, estimated 3 s
 Ran all test suites.
 maxime@Mandarine:~/tests/nestjs/latelier/latelier$ 
-</span>
