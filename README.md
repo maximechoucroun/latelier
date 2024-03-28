@@ -26,6 +26,7 @@ Microsoft VsCode sous Win mais en mode Ubuntu WSL2
 (Version Win de VSCODE, mais travaillant à distance sur Ubuntu)
 v 1.87
 
+<span style="color: #EFF177">
 Version: 1.87.2 (user setup)
 Commit: 863d2581ecda6849923a2118d93a088b0745d9d6
 Date: 2024-03-08T15:20:17.278Z
@@ -35,25 +36,27 @@ Chromium: 118.0.5993.159
 Node.js: 18.17.1   (différente de la version du projet)
 V8: 11.8.172.18-electron.0
 OS: Windows_NT x64 10.0.22631
+</span>
 
 Sont installés sur VScode:
 prettier
 typescript
 eslint
 
+<span style="color: #26B260">Les commandes sont en vert</span>
+<span style="color: #EFF177">Les sorties-ecrans commandes sont en jaune</span>
 
-1/ Creation d'un branche
-
-maxime@Mandarine:~/tests/nestjs$ git clone https://gitlab.com/tests227/latelier.git
+1/ Git
+ <span style="color: #26B260">Git clone https://github.com/maxime-choucroun/latelier</span>
 
 2/
-npm i -g @nestjs/cli
-nest new latelier
+ <span style="color: #26B260">npm i -g @nestjs/cli</span>
+ <span style="color: #26B260">nest new latelier</span>
 
-options:
-npm
 
-3/ cd latelier
+
+3/ Changement de repertoire 
+<span style="color: #26B260">cd latelier</span>
 
 le répertoire est dans mon cas:  maxime@Mandarine:~/tests/nestjs/latelier/latelier$
 maxime user
@@ -68,11 +71,12 @@ Sont installés
 
 
 
-maxime@Mandarine:~/tests/nestjs/latelier/latelier$ npm install
+maxime@Mandarine:~/tests/nestjs/latelier/latelier$ <span style="color: #26B260">npm install</span>
 (install des modules)
 
-maxime@Mandarine:~/tests/nestjs/latelier/latelier$ npm run start:dev
+maxime@Mandarine:~/tests/nestjs/latelier/latelier$ <span style="color: #26B260">npm run start:dev</span>
 
+<span style="color: #EFF177">
 Affichage:
 
 [3:01:52 PM] Starting compilation in watch mode...
@@ -84,7 +88,32 @@ Affichage:
 [Nest] 16328  - 03/27/2024, 3:01:55 PM     LOG [RoutesResolver] AppController {/}: +14ms
 [Nest] 16328  - 03/27/2024, 3:01:55 PM     LOG [RouterExplorer] Mapped {/, GET} route +2ms
 [Nest] 16328  - 03/27/2024, 3:01:55 PM     LOG [NestApplication] Nest application successfully started +3ms
+</span>
 
+5/ Tests jest
+ <span style="color: #26B260">npm run test</span>
 
-Tests jest
- npm run test
+<span style="color: #EFF177">
+maxime@Mandarine:~/tests/nestjs/latelier/latelier$ npm run test 
+
+> latelier@0.0.1 test
+> jest
+
+ PASS  src/app.controller.spec.ts
+  AppController
+    ✓ should be defined (13 ms)
+    list player
+      ✓ should return "player list" (5 ms)
+    player id
+      ✓ should return a player with a speficic id (SerenaWilliams) (10 ms)
+      ✓ should return a null player following an invalid id  (2 ms)
+    stat
+      ✓ should return a stat object (3 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       5 passed, 5 total
+Snapshots:   0 total
+Time:        2.097 s, estimated 3 s
+Ran all test suites.
+maxime@Mandarine:~/tests/nestjs/latelier/latelier$ 
+</span>

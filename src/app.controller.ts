@@ -17,7 +17,6 @@ export class AppController {
     public getPlayersById(@Param('playerId') playerId: string): (Player | null) {
         var playerId_number: Number = +playerId;
         let player = this.appService.getPlayerById(playerId_number);
-        console.log(player)
         return player;
     }
 
