@@ -82,11 +82,16 @@ Affichage:
 [3:01:54 PM] Found 0 errors. Watching for file changes.
 
 [Nest] 16328  - 03/27/2024, 3:01:55 PM     LOG [NestFactory] Starting Nest application...
+
 [Nest] 16328  - 03/27/2024, 3:01:55 PM     LOG [InstanceLoader] AppModule dependencies initialized +9ms
+
 [Nest] 16328  - 03/27/2024, 3:01:55 PM     LOG [RoutesResolver] AppController {/}: +14ms
+
 [Nest] 16328  - 03/27/2024, 3:01:55 PM     LOG [RouterExplorer] Mapped {/, GET} route +2ms
+
 [Nest] 16328  - 03/27/2024, 3:01:55 PM     LOG [NestApplication] Nest application successfully started +3ms
-</span>
+
+
 
 ### 5/ Liens
 
@@ -114,22 +119,39 @@ output:
 maxime@Mandarine:~/tests/nestjs/latelier/latelier$ npm run test 
 
 > latelier@0.0.1 test
+> 
 > jest
+> 
 
  PASS  src/app.controller.spec.ts
+ 
   AppController
+  
     ✓ should be defined (13 ms)
+    
     list player
+    
       ✓ should return "player list" (5 ms)
+      
     player id
+    
       ✓ should return a player with a speficic id (SerenaWilliams) (10 ms)
+      
       ✓ should return a null player following an invalid id  (2 ms)
+      
     stat
+    
       ✓ should return a stat object (3 ms)
+      
 
 Test Suites: 1 passed, 1 total
+
 Tests:       5 passed, 5 total
+
 Snapshots:   0 total
+
 Time:        2.097 s, estimated 3 s
+
 Ran all test suites.
+
 maxime@Mandarine:~/tests/nestjs/latelier/latelier$ 
