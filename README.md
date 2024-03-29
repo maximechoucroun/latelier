@@ -93,11 +93,11 @@ Affichage:
 Liste des joueurs triés
 Get http://localhost:3000/sortedPlayersList
 
-joueur par id
+joueur par id (id=17)
 GET http://localhost:3000/player/17
 
 Statistiques
-GET http://172.23.141.19:3000/stat
+GET http://localhost:3000/stat
 
 output:
 {
