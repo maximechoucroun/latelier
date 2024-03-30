@@ -88,8 +88,29 @@ Affichage:
 [Nest] 16328  - 03/27/2024, 3:01:55 PM     LOG [NestApplication] Nest application successfully started +3ms
 </span>
 
-### 5/ Tests jest
+### 5/ Liens
+
+Liste des joueurs triés
+Get http://localhost:3000/sortedPlayersList
+
+joueur par id
+GET http://localhost:3000/player/17
+
+Statistiques
+GET http://localhost:3000/stat
+
+output:
+{
+    "GreatestCountry": "USA",
+    "AverageIMC": 23.36,
+    "SizeMediane": 185
+}
+
+
+
+### 6/ Tests jest
  `npm run test`
+
 
 **Affichage**
 maxime@Mandarine:~/tests/nestjs/latelier/latelier$ npm run test 
