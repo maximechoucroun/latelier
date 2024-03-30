@@ -82,11 +82,15 @@ Affichage:
 [3:01:54 PM] Found 0 errors. Watching for file changes.
 
 [Nest] 16328  - 03/27/2024, 3:01:55 PM     LOG [NestFactory] Starting Nest application...
+
 [Nest] 16328  - 03/27/2024, 3:01:55 PM     LOG [InstanceLoader] AppModule dependencies initialized +9ms
+
 [Nest] 16328  - 03/27/2024, 3:01:55 PM     LOG [RoutesResolver] AppController {/}: +14ms
+
 [Nest] 16328  - 03/27/2024, 3:01:55 PM     LOG [RouterExplorer] Mapped {/, GET} route +2ms
+
 [Nest] 16328  - 03/27/2024, 3:01:55 PM     LOG [NestApplication] Nest application successfully started +3ms
-</span>
+
 
 ### 5/ Liens
 
